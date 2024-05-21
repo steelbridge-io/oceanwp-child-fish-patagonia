@@ -1,0 +1,180 @@
+/**
+Navigation
+ */
+
+#main-nav {
+  .eicon-close:before {
+    content: "\e87f";
+    color: #fff;
+  }
+  h2 {
+    a {
+      color: $font-white;
+      font-weight: 400;
+    }
+  }
+  .elementor-nav-menu {
+    li {
+      a {
+        color: $nav-link-color;
+      }
+    }
+  }
+  .elementor-menu-toggle__icon--open.eicon-menu-bar {
+    color: $hamburger-white;
+  }
+  .elementor-menu-toggle {
+    background-color: transparent;
+  }
+  .e--pointer-underline .elementor-item:after {
+    background-color: $font-white;
+    height: 1px;
+  }
+  &.main-nav-wrap {
+    position: relative;
+    background-color: transparent;
+    padding: 3em 0;
+    transition: padding 0.5s ease-in-out, background-color 0.9s ease-in-out;
+
+    &.scroll {
+      padding: 1em 1.618em;
+      background-color: #f8f9fa; // Adjust this for desired color
+      transition: padding 0.5s ease-in-out, background-color 1.9s ease-in-out;
+      h2 {
+        a {
+          color: $font-dark;
+        }
+      }
+      .elementor-menu-toggle__icon--open.eicon-menu-bar {
+        color: $hamburger-dark;
+      }
+      .elementor-nav-menu {
+        li {
+          a {
+            color: $nav-link-color-dark;
+          }
+        }
+      }
+      .e--pointer-underline .elementor-item:after {
+        background-color: $font-dark;
+      }
+
+      &:after {
+        width: 0;
+      }
+    }
+    &.loaded {
+      animation: fadeInDown 1s ease-out forwards 1s;
+    }
+  }
+}
+
+#top-bar-wrap {
+  display: none;
+}
+
+#site-brand {
+  animation: fadeInDown 1s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    width: 0;
+    left: 50%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+  }
+}
+
+#main-nav:after {
+  content: "";
+  position: absolute;
+  left: 50% !important;
+  bottom: 0;
+  width: 100%;
+  max-width: 1124px;
+  height: .8px;
+  background-color: #fff;
+  transform: translateX(-50%) !important;
+  animation: fade-in-out 3s 1.8s both !important;
+}
+
+.elementor-nav-menu--dropdown {
+  &.elementor-nav-menu__container {
+    background-color: $nav-background-dark;
+    #menu-2-a85c89e {
+      padding-top: 1.618em;
+      padding-bottom: 1.618em;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  #main-nav {
+    &.main-nav-wrap {
+      &:after {
+        max-width: 80%;
+      }
+      padding: 2em 7.6em;
+    }
+  }
+}
+
+@media screen and (max-width: 896.99px) {
+  @media screen and (max-width: 1024px) {
+    #main-nav {
+      &.main-nav-wrap {
+        padding: 1em .6em;
+      }
+    }
+  }
+  #banner-left {
+    width: 90%;
+    margin: 0 auto 1.2em auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #main-nav .elementor-nav-menu li a {
+    color: $nav-link-color;
+  }
+}
+
+@media screen and (max-width: 667.99px) {
+  #main-nav {
+    &.main-nav-wrap {
+      padding: 1em .6em;
+    }
+  }
+}
+
+@media screen and (max-width: 430.99px) {
+  #banner-right {
+    padding: 0 1em;
+  }
+}
+
+@media screen and (max-width: 414.99px) {
+  #main-nav {
+    &.main-nav-wrap {
+      padding: 1em .6em;
+    }
+  }
+}
+
+@media screen and (max-width: 375.99px) {
+  #main-nav {
+    &.main-nav-wrap {
+      padding: 0;
+    }
+  }
+}
+

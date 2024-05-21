@@ -1,0 +1,40 @@
+/**
+Typography
+ */
+
+/** Navigation Fonts */
+#main-nav {
+  &.main-nav-wrap {
+    h2 {
+      line-height: initial;
+      font-size: 2.5rem;
+    }
+    ul {
+      li {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #main-nav {
+    &.main-nav-wrap {
+      h2 {
+        line-height: initial;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #main-nav {
+    &.main-nav-wrap {
+      h2 {
+        line-height: initial;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

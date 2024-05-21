@@ -1,0 +1,33 @@
+/**
+ * Custom CSS
+ * For Casting Beyond Patagonia Child Theme
+*/
+
+@import 'supports/variables/colors';
+@import 'supports/banner';
+@import 'supports/typography';
+@import 'supports/global';
+@import 'supports/nav';
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    bottom: -30px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
