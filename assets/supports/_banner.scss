@@ -2,20 +2,34 @@
 .elementor-171 .elementor-element.elementor-element-xzv1c7c:not(.elementor-motion-effects-element-type-background) {
   background-position: top !important;
 }
+
+#banner-left {
+  h1 {
+    font-weight: 600;
+  }
+}
 #banner-right-col-text {
   &.banner-right-col-text-wrap {
     a {
       padding: 1.2em 4em;
     }
+    .elementor-button-icon.elementor-align-icon-right {
+      display: flex;
+      align-items: center;
+    }
+
+    /*.fas.fa-arrow-right {
+      font-size: 2.5rem;
+    }*/
   }
 }
 
 #hero {
   &.home-hero-wrap {
-    margin-top: -131px !important;
+    margin-top: -177px !important;
     min-height: 100vh;
     padding-top: 75vh;
-    padding-bottom: 2vh;
+    padding-bottom: 27vh;
   }
 
   padding-bottom: 2em;
@@ -60,7 +74,7 @@
 @media screen and (max-width: 1180.98px) and (max-height: 820.98px) and (orientation: landscape) {
   #hero {
     &.home-hero-wrap {
-      padding: 72vh 1.618em 2vh 1.618em;
+      padding: 69vh 1.618em 2vh 1.618em;
     }
   }
 }
@@ -285,7 +299,7 @@
   #hero {
     &.home-hero-wrap {
       padding-top: 57vh;
-      padding-bottom: 17vh;
+      padding-bottom: 31vh;
     }
   }
 }
