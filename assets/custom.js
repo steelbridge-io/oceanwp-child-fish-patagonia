@@ -21,8 +21,16 @@ window.addEventListener("load", function() {
     document.body.classList.add("loaded");
 }, false);
 
-/*jQuery(window).on('load', function() {
-    setTimeout(function() {
-        jQuery('#main-nav.main-nav-wrap').addClass('loaded');
-    }, .01); // Wait for .1 seconds
-});*/
+(function($) {
+
+    if($('#banner-left').length && $('#banner-right').length) {
+        $(window).scroll(function(){
+            var st = $(this).scrollTop();
+
+            $("#banner-left, #banner-right").css({
+                "opacity" : 1 - st/350
+            });
+        });
+    }
+
+})(jQuery);
