@@ -10,9 +10,11 @@
 }
 #banner-right-col-text {
   &.banner-right-col-text-wrap {
+
     a {
       padding: 1.2em 4em;
     }
+
     .elementor-button-icon.elementor-align-icon-right {
       display: flex;
       align-items: center;
@@ -27,6 +29,7 @@
         color: #000;
         border-color: $white-background;
       }
+
       &::before {
         content: "";
         position: absolute;
@@ -39,9 +42,11 @@
         transform: translateX(-100%);
         transition: transform 0.5s;
       }
+
       &:hover::before {
         transform: translateX(0);
       }
+
     }
 
     /*.fas.fa-arrow-right {
