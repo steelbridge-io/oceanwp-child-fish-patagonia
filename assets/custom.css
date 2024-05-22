@@ -26,6 +26,31 @@ Colors
   display: flex;
   align-items: center;
 }
+#banner-right-col-text.banner-right-col-text-wrap .elementor-button.elementor-button-link.elementor-size-sm {
+  transition: color 0.5s;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+#banner-right-col-text.banner-right-col-text-wrap .elementor-button.elementor-button-link.elementor-size-sm:hover {
+  color: #000;
+  border-color: #ffffff;
+}
+#banner-right-col-text.banner-right-col-text-wrap .elementor-button.elementor-button-link.elementor-size-sm::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+#banner-right-col-text.banner-right-col-text-wrap .elementor-button.elementor-button-link.elementor-size-sm:hover::before {
+  transform: translateX(0);
+}
 
 #hero {
   padding-bottom: 2em;
